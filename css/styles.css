@@ -4,6 +4,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   line-height: 1.1;
+  box-sizing: border-box;
 }
 
 /* header area styles */
@@ -31,6 +32,11 @@ section h1 {
 
 section {
   padding: 10px 40px;
+  min-height: 100vh;
+}
+
+.hero-area {
+  min-height: 100vh;
 }
 
 .left {
@@ -39,6 +45,10 @@ section {
 }
 
 .left p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.right p {
   font-weight: 300;
   line-height: 1.5;
 }
@@ -54,4 +64,61 @@ section {
 }
 /* header area styles end */
 
+/* hero section start */
+
+.big-dream {
+  margin-top: 450px;
+}
+
+.left img {
+  max-width: 80%;
+  display: block;
+  margin-right: 200px;
+}
+
+.content p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* hero section end */
+
+/* experience section start */
+
+.box {
+  width: 35rem;
+  min-height: 25rem;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+#fullstack {
+  border-left: 10px solid;
+  border-image: linear-gradient(180deg, tomato, rgba(248, 183, 4, 0.7));
+  border-image-slice: 1;
+}
+#webdev {
+  border-left: 10px solid;
+  border-image: linear-gradient(180deg, blue, cyan);
+  border-image-slice: 1;
+}
+
+/* experience section end */
+
+/* footer area start  */
+
+footer {
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+/* footer area end  */
+
 /* float clearfix */
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
