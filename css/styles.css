@@ -68,7 +68,7 @@ section {
 }
 /* header area styles end */
 
-/* hero section start */
+/* content section start */
 
 .big-dream {
   margin-top: 450px;
@@ -80,18 +80,31 @@ section {
   margin-right: 200px;
 }
 
+.content {
+  background-image: url("/images/dream-bg.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
 .content p {
   font-weight: 300;
   line-height: 1.5;
 }
 
-/* hero section end */
+/* content section end */
 
 /* experience section start */
+
+.experience {
+  background-image: url("/images/exp-bg.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
 
 .box {
   width: 35rem;
   min-height: 25rem;
+  background-color: #fff;
   padding: 10px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
